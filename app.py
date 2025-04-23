@@ -49,7 +49,12 @@ if st.button("Find Similar Movies"):
         st.subheader("🎥 Top 5 Similar Movies:")
         
         similar_movies = df.iloc[indices[0]][['Movie Name', 'IMDB Rating']]
-        st.dataframe(similar_movies)
+
+        # Display as a bullet-point list in Streamlit
+        for idx, row in df.iloc[indices[0]][['Movie Name', 'IMDB Rating']].iterrows():
+            st.markdown(f"- **{row['Movie Name']}** (IMDB: {row['IMDB Rating']})")
+        #st.markdown("---\n*End of recommendations*")
+        #st.dataframe(similar_movies)
 
         # Optional: Show distances (for debugging)
         # st.write("Distances:", distances)
