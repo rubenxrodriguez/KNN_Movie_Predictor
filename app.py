@@ -47,7 +47,7 @@ if st.button("Find Similar Movies"):
 
         # Display results
         st.subheader("🎥 Top 5 Similar Movies:")
-        similar_movies = df.iloc[indices[0]][['Movie Name', 'IMDB Rating'] + feature_columns]
+        similar_movies = df.iloc[indices[0]][['Movie Name', 'IMDB Rating']]
         st.dataframe(similar_movies)
 
         # Optional: Show distances (for debugging)
