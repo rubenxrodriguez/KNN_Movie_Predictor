@@ -88,7 +88,7 @@
   * Computational cost at prediction time
     - Must compute distances to all training points
     - Becomes slow with large datasets
-  * Curse of dimensionality
+  * Curse of dimensionality (metric dependent)
     - Distance becomes meaningless in high dimensions (hundreds/thousands)
     - All points become equally distant
 
