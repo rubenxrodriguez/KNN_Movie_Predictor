@@ -65,6 +65,10 @@
   * Lazy vs eager learning
     - Lazy (kNN): No training, memorizes all data
     - Eager (LR/DT): Builds model during training
+       - We could not use LR/DT for Text Data (TF-IDF vectors with 1000+ dimensions)
+       - DT makes axis-aligned splits but in 1000D data, no word splits the space meaningfully, as a result the tree grows deep and overfits
+       - LR assumes linear relationships, but text data is non-linear
+       - Distance based methods like cosine similarity or neural networks work better.
   * Interpretability differences
     - Decision trees provide clear rules
     - kNN decisions based on local neighbors
