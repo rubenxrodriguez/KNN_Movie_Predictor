@@ -81,7 +81,7 @@
     - Must compute distances to all training points
     - Becomes slow with large datasets
   * Curse of dimensionality
-    - Distance becomes meaningless in high dimensions
+    - Distance becomes meaningless in high dimensions (hundreds/thousands)
     - All points become equally distant
 
 ## 2. Clustering Algorithms
