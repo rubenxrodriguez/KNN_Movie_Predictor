@@ -10,6 +10,10 @@
   * Common metrics: Euclidean, Manhattan, Minkowski, Cosine
     - Euclidean: Straight-line distance, sensitive to scale
     - Cosine: Measures angle between vectors, good for text
+    - We used kd_tree when working with binary & continuous data (8-Dimensional). Would not use this for high-dimensional data or for text.
+    - Ball Tree is good for high dimensional data or non-Euclidean metrics.
+    - - - Text Data (TF-IDF vectors with 1000+ dimensions)
+        - Image Embeddings, Genomics data
 
 - Choosing k Value:
   * Bias-variance tradeoff (small k vs large k)
