@@ -50,6 +50,10 @@
   * Distance-weighted predictions
     - Inverse distance weighting common (1/d)
     - Helps smooth predictions
+      
+  * When to use KNN Regression for Tabular Data
+     - Pros : Simple, no assumptions about data, handles non-linear relationships
+     - Cons : Slow for large datasets, requires careful encoding of categoricals, sensitive to irrelevant features.
 
 ### 1.3 Advanced Applications
 - Recommendation Systems:
